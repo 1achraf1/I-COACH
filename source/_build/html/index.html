@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>AI workout Tracker documentation &#8212; AI_Fitness_Tracker 2025 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=cb975c41"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="ai-workout-tracker-documentation">
+<h1>AI workout Tracker documentation<a class="headerlink" href="#ai-workout-tracker-documentation" title="Link to this heading">¶</a></h1>
+<p>Welcome to the documentation of AI workout Tracker, this document gives a detailed description
+of the methodologies, tools, and results for the project.
+Table of contents:
+——————</p>
+<ul class="simple">
+<li><p>Introduction</p></li>
+<li><p>Modelisation</p></li>
+<li><p>Installation</p></li>
+</ul>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<p><strong>AI Workout Tracker (AIWT)</strong> is an AI-powered tool designed to assess exercise form. Whether you’re a beginner or an experienced fitness
+enthusiast, maintaining the correct form during exercises is critical for preventing injuries and maximizing workout efficiency. AIWT leverages computer vision and
+machine learning techniques to analyze your posture, movement, and execution of exercises in real-time.</p>
+<p>This documentation will walk you through the system architecture, how to set up AIWT, and how to use it for form checking. It also includes guidelines for contributing
+to the project.</p>
+</section>
+<section id="modelisation">
+<h2>Modelisation<a class="headerlink" href="#modelisation" title="Link to this heading">¶</a></h2>
+<p>The AI Workout Tracker (AIWT) model follows a two-step process for exercise form evaluation. First, it uses a classification model to identify which exercise the
+user is performing by analyzing key body landmarks through pose estimation. Once the exercise is classified (e.g., squat, push-up, or lunge), the system then
+directs the data to the corresponding form-checking model, which uses a Long Short-Term Memory (LSTM) network to analyze the temporal sequence of movements.
+Instead of relying solely on joint angles, the LSTM model tracks the evolution of the user’s posture and movement over time, allowing it to assess the form dynamically.
+For example, in a squat, the LSTM evaluates how the user’s body moves throughout the exercise, checking for correct knee alignment and hip depth. This approach ensures
+that the system provides accurate, real-time feedback tailored to the specific exercise being performed.
+.. toctree:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
+<span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="n">Contents</span><span class="p">:</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">AI_Fitness_Tracker</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, KASSIMI Achraf & BOUTRID Mourad.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
