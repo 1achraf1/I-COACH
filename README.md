@@ -37,7 +37,7 @@ The system uses advanced computer vision to help users do exercises correctly, l
 ### Computer Vision Pipeline
 ```mermaid
 graph TD
-    A[Video Input] --> B[🔍 Frame Extraction]
+    A[Video Input] --> B[Frame Extraction]
     B --> C[Exercise Classifier]
     C --> D{Exercise Type}
     D -->|Push-ups| E[Push-up Form Analyzer]
@@ -57,7 +57,7 @@ graph TD
 ### AI Assistant Pipeline
 ```mermaid
 graph TD
-    A[💬 User Query] --> B[Text Preprocessing]
+    A[User Query] --> B[Text Preprocessing]
     B --> C[GRU NLP Model]
     C --> D[Intent Classification]
     D --> E[Response Generation]
