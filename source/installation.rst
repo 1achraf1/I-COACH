@@ -44,7 +44,7 @@ Installation Steps
 
 .. code-block:: bash
 
-   git clone https://github.com/yourusername/i-coach.git
+   git clone https://github.com/1achraf1/i-coach.git
    cd i-coach
 
 2. **Create Virtual Environment** (Recommended)
