@@ -70,6 +70,7 @@ graph TD
 
 ## 📁 Repository Structure
 
+<!--
 ```
 I-Coach/
 ├── app/                            
@@ -92,7 +93,8 @@ I-Coach/
 ├── requirements.txt                     
 ├── README.md                            
 └── LICENSE
-    ```
+```
+-->
 
 ## 🚀 Quick Start
 
@@ -108,12 +110,12 @@ I-Coach/
    ```bash
    git clone https://github.com/yourusername/I-Coach.git
    cd I-Coach
-       ```
+   ```
 
 2. **Install dependencies**
    ```bash
    pip install -r requirements.txt
-       ```
+   ```
 
 ### Usage Options
 
@@ -121,22 +123,21 @@ I-Coach/
 Launch the main Streamlit application:
 ```bash
 streamlit run app/app.py
-    ```
+```
 
 #### 2. Individual Components
 - **Exercise Classification Only**:
   ```bash
   streamlit run notebooks/classification-mediapipe.ipynb
-      ```
+  ```
 - **squat Form model Dashboard**:
   ```bash
   streamlit run notebooks/squat_Form_Classifier.ipynb
-      ```
+  ```
 - **AI Chatbot Interface**:
   ```bash
   streamlit run notebooks/chatbot.ipynb
-  
-    ```
+  ```
 
 ## 🛠️ Core Components
 
@@ -200,10 +201,6 @@ streamlit run app/app.py
 - **3D Pose Estimation**: Enhanced biomechanical analysis
 - **Mobile Application**: Native iOS/Android apps
 - **Wearable Integration**: Smartwatch and fitness tracker connectivity
-
-
-
-    ```
 
 ## 📄 License
 
