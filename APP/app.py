@@ -489,7 +489,7 @@ def load_exercise_model():
         possible_paths = [
             r"D:\Downloads\best_exercise_classifier.h5",
             "./best_exercise_classifier.h5",
-            "./models/best_exercise_classifier.h5"
+            "../Models/best_exercise_classifier.h5"
         ]
 
         for path in possible_paths:
@@ -511,7 +511,7 @@ def load_form_model():
         possible_paths = [
             r"D:\Downloads\best_attention_model.h5",
             "./best_attention_model.h5",
-            "./models/best_attention_model.h5"
+            "../Models/best_attention_model.h5"
         ]
 
         custom_objects = {'AdditiveAttention': AdditiveAttention}
@@ -533,7 +533,7 @@ def load_pushup_form_model():
         possible_paths = [
             r"D:\Downloads\best_pu_attention_model.h5",
             "./best_pu_attention_model.h5",
-            "./models/best_pu_attention_model.h5"
+            "../Models/best_pu_attention_model.h5"
         ]
 
         custom_objects = {'AdditiveAttention': AdditiveAttention}
@@ -558,7 +558,7 @@ def load_squat_form_model():
             "./models/best_squat_attention_model.h5",
             r"D:\Downloads\best_squat_rnn_model.h5",
             "./best_squat_model.h5",
-            "./models/best_squat_model.h5"
+            "../Models/best_squat_model.h5"
         ]
 
         custom_objects = {'AdditiveAttention': AdditiveAttention}
@@ -924,7 +924,7 @@ class FitnessChatbot:
             model_paths = [
                 r"D:\Downloads\fitness_lstm_model.h5",
                 "./chatbot_model.h5",
-                "./models/chatbot_model.h5",
+                "../Models/chatbot/chatbot_model.h5",
                 r"D:\Downloads\fitness_chatbot_model.h5",
                 "./fitness_chatbot_model.h5"
             ]
@@ -933,7 +933,7 @@ class FitnessChatbot:
             tokenizer_paths = [
                 r"D:\Downloads\fitness_lstm_tokenizer.pkl",
                 "./tokenizer.pkl",
-                "./models/tokenizer.pkl",
+                "../Models/chatbot/tokenizer.pkl",
                 r"D:\Downloads\chatbot_tokenizer.pkl",
                 "./chatbot_tokenizer.pkl"
             ]
