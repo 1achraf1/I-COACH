@@ -1,7 +1,7 @@
 I-Coach: AI-Powered Exercise Recognition and Form Analysis
 =========================================================
 
-Welcome to I-Coach, an advanced AI-powered exercise recognition system that provides real-time exercise classification and intelligent form checking for optimal workout performance.
+Welcome to I-Coach, advanced AI-powered exercise recognition system that provides real-time exercise classification and intelligent form checking for optimal workout performance.
 
 .. image:: _static/images/logo.png
    :alt: I-Coach Logo
