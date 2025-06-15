@@ -110,20 +110,9 @@ I-Coach/
    cd I-Coach
    ```
 
-2. **Create and activate virtual environment**
-   ```bash
-   python -m venv icoach_env
-   source icoach_env/bin/activate  # On Windows: icoach_env\Scripts\activate
-   ```
-
-3. **Install dependencies**
+2. **Install dependencies**
    ```bash
    pip install -r requirements.txt
-   ```
-
-4. **Download pre-trained models** (if not included)
-   ```bash
-   python scripts/download_models.py
    ```
 
 ### Usage Options
@@ -131,64 +120,30 @@ I-Coach/
 #### 1. Complete I-Coach Dashboard (Recommended)
 Launch the main Streamlit application:
 ```bash
-streamlit run app/main_app.py
+streamlit run app/app.py
 ```
 
 #### 2. Individual Components
 - **Exercise Classification Only**:
   ```bash
-  streamlit run app/exercise_classifier_app.py
+  streamlit run notebooks/classification-mediapipe.ipynb
   ```
-- **Form Analysis Dashboard**:
+- **squat Form model Dashboard**:
   ```bash
-  streamlit run app/form_analyzer_app.py
+  streamlit run notebooks/squat_Form_Classifier.ipynb
   ```
 - **AI Chatbot Interface**:
   ```bash
-  streamlit run app/chatbot_app.py
-  ```
-
-#### 3. Programmatic Usage
-```python
-from models.exercise_classifier.model_architecture import ExerciseClassifier
-from models.form_analyzers.pushup_analyzer import PushupFormAnalyzer
-from src.computer_vision.video_processor import VideoProcessor
-from models.chatbot.gru_model import FitnessChatbot
-
-# Initialize exercise classifier
-classifier = ExerciseClassifier()
-classifier.load_model('trained_models/exercise_classifier.h5')
-
-# Process video for exercise recognition
-processor = VideoProcessor()
-frames = processor.extract_frames('path/to/workout_video.mp4')
-exercise_predictions = classifier.predict_batch(frames)
-
-print(f"Detected exercise: {exercise_predictions[0]}")
-
-# Analyze form for specific exercises
-if exercise_predictions[0] == 'pushups':
-    form_analyzer = PushupFormAnalyzer()
-    form_analyzer.load_model('trained_models/pushup_analyzer.h5')
-    
-    form_scores, recommendations = form_analyzer.analyze_form(frames)
-    print(f"Form score: {form_scores.mean():.2f}")
-    print(f"Recommendations: {recommendations}")
-
-# Initialize AI chatbot
-chatbot = FitnessChatbot()
-chatbot.load_model('trained_models/chatbot_gru.h5')
-
-response = chatbot.get_response("How can I improve my push-up form?")
-print(f"I-Coach: {response}")
+  streamlit run notebooks/chatbot.ipynb
+  
 ```
 
 ## 🛠️ Core Components
 
 ### Exercise Classification System
-- **Multi-Class CNN**: Deep convolutional neural network for exercise recognition
-- **Temporal Analysis**: LSTM layers for sequence-based exercise identification
-- **Real-time Processing**: Optimized inference pipeline for live camera feeds
+- **Multi-Class RNN**: Deep recurent neural network for exercise recognition
+- **Temporal Analysis**: Sequence-based exercise identification
+- **Real-time Processing**: Stramlit inference pipeline for live camera feeds
 
 ### Form Analysis Models
 - **Push-up Analyzer**: Biomechanical assessment of push-up execution
@@ -209,11 +164,11 @@ print(f"I-Coach: {response}")
 
 | Exercise      | Classification | Form Analysis | Key Metrics |
 |---------------|---------------|---------------|-------------|
-| Push-ups      | ✅            | ✅            | Body alignment, depth, tempo |
-| Bench Press   | ✅            | ❌            | Exercise recognition only |
-| Pull-ups      | ✅            | ❌            | Exercise recognition only |
-| Squats        | ✅            | ✅            | Hip/knee angles, depth |
-| Hammer Curls  | ✅            | ✅            | Arm position, curl range |
+| Push-ups      | 1            | 1            | Body alignment, depth, tempo |
+| Bench Press   | 1            | 0            | Exercise recognition only |
+| Pull-ups      | 1            | 0            | Exercise recognition only |
+| Squats        | 1            | 1            | Hip/knee angles, depth |
+| Hammer Curls  | 1            | 1            | Arm position, curl range |
 
 ## 📈 Performance Metrics
 
@@ -246,35 +201,8 @@ print(f"I-Coach: {response}")
 - **Mobile Application**: Native iOS/Android apps
 - **Wearable Integration**: Smartwatch and fitness tracker connectivity
 
-## 📚 Model Details
 
-### Exercise Classifier Architecture
-```python
-# Simplified model architecture
-Sequential([
-    Conv3D(32, (3, 3, 3), activation='relu'),
-    MaxPooling3D((2, 2, 2)),
-    Conv3D(64, (3, 3, 3), activation='relu'),
-    MaxPooling3D((2, 2, 2)),
-    Conv3D(128, (3, 3, 3), activation='relu'),
-    GlobalAveragePooling3D(),
-    Dense(512, activation='relu'),
-    Dropout(0.5),
-    Dense(5, activation='softmax')  # 5 exercise classes
-])
-```
 
-### Chatbot GRU Model
-```python
-# NLP model architecture
-Sequential([
-    Embedding(vocab_size, 128),
-    GRU(256, return_sequences=True),
-    GRU(128),
-    Dense(64, activation='relu'),
-    Dropout(0.3),
-    Dense(num_intents, activation='softmax')
-])
 ```
 
 ## 📄 License
