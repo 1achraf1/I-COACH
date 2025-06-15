@@ -213,8 +213,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 🔗 LinkedIn: [Mourad Boutrid](https://www.linkedin.com/in/mourad-boutrid-981659336)
 
 **Kassimi Achraf** - AI Engineering Student  
-- 📧 Email: ac.kassimi@edu.umi.ac.ma
-- 🔗 LinkedIn: [Achraf Kassimi](https://www.linkedin.com/in/achraf-kassimi-605418285)
+- 📧 Email: achkass71@gmail.com
+- 🔗 LinkedIn: [KASSIMI Achraf](https://www.linkedin.com/in/achraf-kassimi-605418285)
 
 ## 🙏 Acknowledgments
 
