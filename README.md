@@ -247,10 +247,10 @@ print(f"I-Coach: {response}")
 - **Overall Accuracy**: 94.5% on validation dataset
 - **Per-Class F1-Scores**:
   - Push-ups: 0.96
-  - Bench Press: 0.93
-  - Pull-ups: 0.91
-  - Squats: 0.95
-  - Hammer Curls: 0.97
+  - Bench Press: 0.80
+  - Pull-ups: 0.93
+  - Squats: 0.78
+  - Hammer Curls: 0.96
 
 ### Form Analysis Accuracy
 - **Push-up Form**: 89% correlation with expert assessment
@@ -258,25 +258,12 @@ print(f"I-Coach: {response}")
 - **Hammer Curl Form**: 87% precision in range of motion analysis
 
 ### Chatbot Performance
-- **Intent Recognition**: 91% accuracy across fitness-related queries
-- **Response Relevance**: 4.2/5.0 average user rating
-
-## 🔧 Advanced Features
-
-### Real-Time Processing
-- **Low Latency**: < 100ms processing time per frame
-- **Adaptive Quality**: Dynamic resolution adjustment based on hardware
-- **Batch Processing**: Efficient handling of video uploads
-
-### Model Optimization
-- **Quantization**: Model compression for mobile deployment
-- **Pruning**: Network optimization without significant accuracy loss
-- **Ensemble Methods**: Multiple model combination for improved reliability
+- **Intent Recognition**: 79% accuracy across fitness-related queries
+- **Response Relevance**: 4.0/5.0 average user rating
 
 ### User Experience
 - **Progress Tracking**: Workout session analytics and improvement metrics
 - **Personalized Recommendations**: AI-driven exercise suggestions
-- **Multi-Language Support**: Chatbot responses in multiple languages
 
 ## 🚀 Future Enhancements
 
@@ -284,8 +271,6 @@ print(f"I-Coach: {response}")
 - **3D Pose Estimation**: Enhanced biomechanical analysis
 - **Mobile Application**: Native iOS/Android apps
 - **Wearable Integration**: Smartwatch and fitness tracker connectivity
-- **Virtual Reality**: Immersive workout experiences
-- **Social Features**: Community challenges and progress sharing
 
 ## 📚 Model Details
 
@@ -318,38 +303,23 @@ Sequential([
 ])
 ```
 
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Contribution Areas
-- New exercise recognition models
-- Improved form analysis algorithms
-- Enhanced chatbot responses
-- UI/UX improvements
-- Performance optimizations
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for complete details.
 
 ## 👥 Authors
 
-**Your Name** - AI/ML Engineer
-- 📧 Email: your.email@example.com
-- 🔗 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- 🐙 GitHub: [Your GitHub](https://github.com/yourusername)
+**Boutrid Mourad** - AI Engineering Student
+- 📧 Email: muurad.boutrid@gmail.com
+- 🔗 LinkedIn: [Mourad Boutrid](https://www.linkedin.com/in/mourad-boutrid-981659336)
+
+**Kassimi Achraf** - AI Engineering Student  
+- 📧 Email: ac.kassimi@edu.umi.ac.ma
+- 🔗 LinkedIn: [Achraf Kassimi](https://www.linkedin.com/in/achraf-kassimi-605418285)
 
 ## 🙏 Acknowledgments
 
 - **MediaPipe** for pose estimation and computer vision utilities
-- **OpenCV** community for computer vision processing tools
 - **TensorFlow/Keras** for deep learning framework
 - **Streamlit** for rapid development of interactive ML applications
 - **Optuna** for automated hyperparameter optimization
@@ -365,23 +335,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Current Version**: 1.0.0  
 **Status**: Active Development  
-**Deployment**: [Live Demo](https://i-coach-demo.streamlit.app) 🚀
-
----
-
-## 🎯 Demo & Screenshots
-
-### Exercise Classification
-![Exercise Classification Demo](docs/images/classification_demo.gif)
-
-### Form Analysis
-![Form Analysis Dashboard](docs/images/form_analysis_dashboard.png)
-
-### AI Chatbot
-![Chatbot Interface](docs/images/chatbot_demo.png)
 
 ---
 
 ⭐ **If you find I-Coach helpful for your fitness journey or research, please consider starring this repository!**
-
-🏋️‍♂️ **Ready to transform your workout experience? Try I-Coach today!**
