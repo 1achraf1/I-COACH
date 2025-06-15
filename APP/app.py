@@ -28,7 +28,7 @@ warnings.filterwarnings("ignore")
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 tf.get_logger().setLevel('ERROR')
 
-response = {
+responses = {
     'pushups_beginner': "For beginner push-ups: Start on your knees (modified push-up). Keep your body straight, hands shoulder-width apart. Lower chest to ground, push back up. Aim for 3 sets of 5-10 reps. Focus on form over quantity!",
 
     'pushups_progression': "To progress push-ups: Master regular push-ups first (3x15). Then try: incline push-ups → regular → decline → diamond push-ups → one-arm push-ups. Increase reps gradually before moving to harder variations.",
@@ -153,7 +153,7 @@ intents_data = {
     ]
 }
 # Update the response dictionary
-response.update({
+responses.update({
     # Push-ups
     'pushups_daily': "Daily push-ups: It's okay to do push-ups daily if you're doing low-moderate volume. For high intensity, allow rest days. Listen to your body - if you feel sore or weak, take a day off.",
     'pushups_muscle_groups': "Push-ups work: Chest (pectorals), shoulders (anterior deltoids), triceps, and core. Secondary muscles include serratus anterior and upper back for stabilization. It's a compound movement!",
@@ -349,7 +349,7 @@ intents_data.update({
 })
 # Page configuration
 st.set_page_config(
-    page_title="💪 AI Exercise Classifier",
+    page_title="I-Coach",
     page_icon="💪",
     layout="wide"
 )
@@ -487,7 +487,7 @@ class AdditiveAttention(Layer):
 def load_exercise_model():
     try:
         possible_paths = [
-            r"D:\Downloads\best_exercise_classifier.h5",
+            r"I-COACH/Models/best_exercise_classifier.h5",
             "./best_exercise_classifier.h5",
             "../Models/best_exercise_classifier.h5"
         ]
@@ -509,8 +509,8 @@ def load_exercise_model():
 def load_form_model():
     try:
         possible_paths = [
-            r"D:\Downloads\best_attention_model.h5",
-            "./best_attention_model.h5",
+            r"I-COACH/Models/best_attention_model.h5",
+            "/content/I-COACH/Models/best_attention_model.h5",
             "../Models/best_attention_model.h5"
         ]
 
@@ -531,8 +531,8 @@ def load_form_model():
 def load_pushup_form_model():
     try:
         possible_paths = [
-            r"D:\Downloads\best_pu_attention_model.h5",
-            "./best_pu_attention_model.h5",
+            r"/content/I-COACH/Models/best_pu_attention_model.h5",
+            "I-COACH/Models/best_pu_attention_model.h5",
             "../Models/best_pu_attention_model.h5"
         ]
 
@@ -554,11 +554,9 @@ def load_squat_form_model():
     """Load the squat form checking model"""
     try:
         possible_paths = [
-            "./best_squat_attention_model.h5",
-            "./models/best_squat_attention_model.h5",
-            r"D:\Downloads\best_squat_rnn_model.h5",
-            "./best_squat_model.h5",
-            "../Models/best_squat_model.h5"
+            "/content/I-COACH/Models/best_squat_rnn_model.h5",
+            "I-COACH/Models/best_squat_rnn_model.h5",
+            r"best_squat_rnn_model.h5"
         ]
 
         custom_objects = {'AdditiveAttention': AdditiveAttention}
@@ -656,7 +654,7 @@ def analyze_form_with_model(form_sequence, exercise_type):
                 elif form_confidence > 0.6:
                     feedback = "Great squat form! Keep maintaining that technique! ✅"
                 else:
-                    feedback = "Good squat form overall 👍"
+                    feedback = "Good squat form overall "
             elif predicted_form == 'bad_back_wrap':
                 feedback = "⚠️ Back Position Issue: Keep your chest up and avoid excessive forward lean. Engage your core!"
             elif predicted_form == 'bad_back_round':
@@ -922,17 +920,17 @@ class FitnessChatbot:
         try:
             # Possible paths for the chatbot model
             model_paths = [
-                r"D:\Downloads\fitness_lstm_model.h5",
-                "./chatbot_model.h5",
-                "../Models/chatbot/chatbot_model.h5",
+                "/content/I-COACH/Models/chatbot/fitness_lstm_model.h5",
+                "I-COACH/Models/chatbot/fitness_lstm_model.h5",
+                "../Models/chatbot/fitness_lstm_model.h5",
                 r"D:\Downloads\fitness_chatbot_model.h5",
                 "./fitness_chatbot_model.h5"
             ]
 
             # Possible paths for the tokenizer
             tokenizer_paths = [
-                r"D:\Downloads\fitness_lstm_tokenizer.pkl",
-                "./tokenizer.pkl",
+                "I-COACH/Models/chatbot/fitness_lstm_tokenizer.pkl",
+                "/content/I-COACH/Models/chatbot/fitness_lstm_tokenizer.pkl",
                 "../Models/chatbot/tokenizer.pkl",
                 r"D:\Downloads\chatbot_tokenizer.pkl",
                 "./chatbot_tokenizer.pkl"
@@ -1070,11 +1068,11 @@ def main():
         st.markdown("### 🏋️ Supported Exercises")
         for exercise in label_map:
             if exercise in ['hammer curl', 'push-up', 'squat']:
-                st.write(f"• {exercise.title()} 🤖 (with AI form checking)")
+                st.write(f"• {exercise.title()} (with AI form checking)")
             else:
                 st.write(f"• {exercise.title()}")
 
-        st.markdown("### 📋 Instructions")
+        st.markdown("### Instructions")
         st.markdown("""
         **Live Prediction:**
         1. Click "Start Camera" to begin
@@ -1096,10 +1094,10 @@ def main():
 
     # Main content
     # Main content
-    tab1, tab2, tab3 = st.tabs(["📹 Live Camera", "📁 Video Upload", "🤖 AI Fitness Coach"])
+    tab1, tab2, tab3 = st.tabs(["📹 Live Camera", "📁 Video Upload", "AI Fitness Coach"])
 
     with tab1:
-        st.markdown("### 📹 Live Exercise Recognition")
+        st.markdown("### Live Exercise Recognition")
 
         col1, col2 = st.columns([3, 1])
 
@@ -1273,7 +1271,7 @@ def main():
             cleanup_temp_file(temp_path)
 
     with tab3:
-        st.markdown("### 🤖 AI Fitness Coach")
+        st.markdown("### AI Fitness Coach")
         st.markdown("Ask me anything about fitness, exercise form, or workout routines!")
 
         # Initialize chatbot
@@ -1302,7 +1300,7 @@ def main():
             user_input = st.text_input("Ask your fitness question:", key="chat_input")
 
             if st.button("Send", key="send_msg") and user_input.strip():
-                with st.spinner('🤔 Thinking...'):
+                with st.spinner(' Thinking...'):
                     response_data = st.session_state.chatbot_model.get_response(user_input)
 
                     # Add to chat history
@@ -1354,5 +1352,4 @@ def main():
             """)
 
 
-if __name__ == "__main__":
-    main()
+main()
