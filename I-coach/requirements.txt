@@ -1,9 +1,0 @@
-streamlit
-opencv-python
-tensorflow
-scikit-learn
-joblib
-mediapipe
-numpy
-pandas
-opencv-python-headless
