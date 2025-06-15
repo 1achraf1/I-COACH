@@ -10,7 +10,7 @@
 
 An intelligent computer vision system that provides real-time exercise coaching and form analysis using deep learning models for fitness enthusiasts and trainers.
 
-## 🎯 Overview
+## Overview
 
 I-Coach implements a comprehensive AI-powered fitness assistant that combines computer vision, deep learning, and natural language processing to provide:
 
@@ -21,7 +21,7 @@ I-Coach implements a comprehensive AI-powered fitness assistant that combines co
 
 The system uses advanced computer vision to help users do exercises correctly, lowering the risk of injury and improving workout results.
 
-## ✨ Key Features
+## Key Features
 
 - **Multi-Exercise Recognition**: Supports 5 fundamental exercises (Push-ups, Bench Press, Pull-ups, Squats, Hammer Curls)
 - **Real-Time Processing**: Live camera feed analysis with instant feedback
@@ -32,19 +32,19 @@ The system uses advanced computer vision to help users do exercises correctly, l
 - **Interactive Dashboard**: Comprehensive Streamlit application for seamless user experience
 - **Performance Metrics**: Detailed analytics and progress tracking
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ### Computer Vision Pipeline
 ```mermaid
 graph TD
-    A[📹 Video Input] --> B[🔍 Frame Extraction]
-    B --> C[🧠 Exercise Classifier]
+    A[Video Input] --> B[🔍 Frame Extraction]
+    B --> C[Exercise Classifier]
     C --> D{Exercise Type}
-    D -->|Push-ups| E[💪 Push-up Form Analyzer]
-    D -->|Squats| F[🦵 Squat Form Analyzer]
-    D -->|Hammer Curls| G[💪 Hammer Curl Form Analyzer]
-    D -->|Other| H[📊 General Analysis]
-    E --> I[📈 Results Dashboard]
+    D -->|Push-ups| E[Push-up Form Analyzer]
+    D -->|Squats| F[Squat Form Analyzer]
+    D -->|Hammer Curls| G[Hammer Curl Form Analyzer]
+    D -->|Other| H[General Analysis]
+    E --> I[Results Dashboard]
     F --> I
     G --> I
     H --> I
@@ -57,11 +57,11 @@ graph TD
 ### AI Assistant Pipeline
 ```mermaid
 graph TD
-    A[💬 User Query] --> B[🔤 Text Preprocessing]
-    B --> C[🧠 GRU NLP Model]
-    C --> D[🎯 Intent Classification]
-    D --> E[💡 Response Generation]
-    E --> F[📱 Streamlit Interface]
+    A[💬 User Query] --> B[Text Preprocessing]
+    B --> C[GRU NLP Model]
+    C --> D[Intent Classification]
+    D --> E[Response Generation]
+    E --> F[Streamlit Interface]
     
     style A fill:#fff3e0
     style C fill:#f3e5f5
@@ -96,7 +96,7 @@ I-Coach/
 ```
 -->
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -139,7 +139,7 @@ streamlit run app/app.py
   streamlit run notebooks/chatbot.ipynb
   ```
 
-## 🛠️ Core Components
+## Core Components
 
 ### Exercise Classification System
 - **Multi-Class RNN**: Deep recurent neural network for exercise recognition
@@ -161,7 +161,7 @@ streamlit run app/app.py
 - **Multi-Objective Optimization**: Balancing accuracy, speed, and model size
 - **Cross-Validation**: Robust evaluation methodology
 
-## 📊 Supported Exercises
+## Supported Exercises
 
 | Exercise      | Classification | Form Analysis | Key Metrics |
 |---------------|---------------|---------------|-------------|
@@ -171,7 +171,7 @@ streamlit run app/app.py
 | Squats        | 1            | 1            | Hip/knee angles, depth |
 | Hammer Curls  | 1            | 1            | Arm position, curl range |
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 ### Exercise Classification Performance
 - **Overall Accuracy**: 94.5% on validation dataset
@@ -195,14 +195,14 @@ streamlit run app/app.py
 - **Progress Tracking**: Workout session analytics and improvement metrics
 - **Personalized Recommendations**: AI-driven exercise suggestions
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - **Additional Exercises**: Expansion to 15+ exercise types
 - **3D Pose Estimation**: Enhanced biomechanical analysis
 - **Mobile Application**: Native iOS/Android apps
 - **Wearable Integration**: Smartwatch and fitness tracker connectivity
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for complete details.
 
@@ -216,7 +216,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 📧 Email: achkass71@gmail.com
 - 🔗 LinkedIn: [KASSIMI Achraf](https://www.linkedin.com/in/achraf-kassimi-605418285)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **MediaPipe** for pose estimation and computer vision utilities
 - **TensorFlow/Keras** for deep learning framework
@@ -225,12 +225,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Fitness Community** for providing training data and domain expertise
 
 ---
-
-## 📊 Project Status
-
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/I-Coach)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/I-Coach)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/I-Coach)
 
 **Current Version**: 1.0.0  
 **Status**: Active Development  
