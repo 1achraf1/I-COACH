@@ -72,50 +72,24 @@ graph TD
 
 ```
 I-Coach/
-├── app/                                  # Streamlit Applications
-│   ├── main_app.py                       # Main dashboard
-│   ├── exercise_classifier_app.py        # Exercise recognition interface
-│   ├── form_analyzer_app.py             # Form analysis dashboard
-│   ├── chatbot_app.py                   # AI assistant interface
-│   └── video_processor_app.py           # Video upload processor
-├── models/                               # Deep Learning Models
-│   ├── exercise_classifier/              # Multi-class exercise classifier
-│   │   ├── model_architecture.py        
-│   │   ├── training_pipeline.py         
-│   │   └── evaluation_metrics.py        
-│   ├── form_analyzers/                   # Exercise-specific analyzers
-│   │   ├── pushup_analyzer.py           
-│   │   ├── squat_analyzer.py            
-│   │   ├── hammer_curl_analyzer.py      
-│   │   └── base_form_analyzer.py        
-│   ├── chatbot/                          # NLP Chatbot System
-│   │   ├── gru_model.py                 
-│   │   ├── text_processor.py            
-│   │   ├── intent_classifier.py         
-│   │   └── response_generator.py        
-│   └── optimization/                     # Hyperparameter Tuning
-│       ├── optuna_optimizer.py          
-│       ├── hyperparameter_configs.py    
-│       └── model_comparison.py                    
-├── trained_models/                       # Saved Model Artifacts
-│   ├── exercise_classifier.h5           
-│   ├── pushup_analyzer.h5               
-│   ├── squat_analyzer.h5                
-│   ├── hammer_curl_analyzer.h5          
-│   ├── chatbot_gru.h5                   
-│   └── model_configs/                   
-├── results/                              # Experimental Results
-│   ├── classification_reports/          
-│   ├── form_analysis_metrics/           
-│   ├── optimization_logs/               
-│   └── visualizations/                  
-├── notebooks/                            # Jupyter Notebooks
+├── app/                            
+│   ├── app.ipynb                
+│   └── app.py          
+├── models/                               
+│   ├── chatbot/              
+│   │   ├── fitness_lstm_model.h5                
+│   │   └── fitness_lstm_tokenizer.pkl        
+│   ├── best_attention_model.h5
+│   ├── best_exercise_classifier.h5                          
+│   ├── best_pu_attention_model.h5                            
+│   └── best_squat_rnn_model.h5                                                 
+├── notebooks/                           
 │   ├── Hammer_Curl_Classifier.ipynb           
 │   ├── Squat_Form_Classifier.ipynb          
-│   ├── chatbot.ipynb     
+│   ├── chatbot.ipynb
+│   ├── classification-mediapipe.ipynb     
 │   └── pushup-form-tracker.ipynb           
-├── requirements.txt                      # Python dependencies
-├── config.yaml                          # Configuration file
+├── requirements.txt                     
 ├── README.md                            
 └── LICENSE
 ```
