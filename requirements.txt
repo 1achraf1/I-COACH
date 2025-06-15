@@ -6,4 +6,4 @@ joblib
 mediapipe
 numpy
 pandas
-sphinx-rtd-theme sphinx-copybutton
+
