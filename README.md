@@ -4,6 +4,9 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://tensorflow.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg)](https://opencv.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red.svg)](https://streamlit.io/)
+[![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10+-yellow.svg)](https://mediapipe.dev/)
+[![YOLO](https://img.shields.io/badge/YOLO-v5%2Fv8-black.svg)](https://github.com/ultralytics/yolov5)
+
 
 An intelligent computer vision system that provides real-time exercise coaching and form analysis using deep learning models for fitness enthusiasts and trainers.
 
@@ -16,7 +19,7 @@ I-Coach implements a comprehensive AI-powered fitness assistant that combines co
 - **Interactive Coaching**: AI chatbot for personalized fitness guidance and recommendations
 - **Multi-Modal Input**: Support for live camera feed and video upload processing
 
-The system leverages state-of-the-art computer vision techniques to ensure proper form execution, reducing injury risk and maximizing workout effectiveness.
+The system uses advanced computer vision to help users do exercises correctly, lowering the risk of injury and improving workout results.
 
 ## ✨ Key Features
 
@@ -75,16 +78,6 @@ I-Coach/
 │   ├── form_analyzer_app.py             # Form analysis dashboard
 │   ├── chatbot_app.py                   # AI assistant interface
 │   └── video_processor_app.py           # Video upload processor
-├── data/                                 # Dataset and Media Files
-│   ├── exercise_videos/                  # Training video samples
-│   │   ├── pushups/                     
-│   │   ├── benchpress/                  
-│   │   ├── pullups/                     
-│   │   ├── squats/                      
-│   │   └── hammer_curls/                
-│   ├── annotations/                      # Ground truth labels
-│   ├── processed/                        # Preprocessed datasets
-│   └── models_data/                      # Model training data
 ├── models/                               # Deep Learning Models
 │   ├── exercise_classifier/              # Multi-class exercise classifier
 │   │   ├── model_architecture.py        
@@ -103,27 +96,7 @@ I-Coach/
 │   └── optimization/                     # Hyperparameter Tuning
 │       ├── optuna_optimizer.py          
 │       ├── hyperparameter_configs.py    
-│       └── model_comparison.py          
-├── src/                                  # Core Implementation
-│   ├── computer_vision/                  # CV Processing Pipeline
-│   │   ├── frame_extractor.py           
-│   │   ├── pose_detector.py             
-│   │   ├── feature_extractor.py         
-│   │   └── video_processor.py           
-│   ├── data_processing/                  # Data Pipeline
-│   │   ├── data_loader.py               
-│   │   ├── augmentation.py              
-│   │   ├── preprocessing.py             
-│   │   └── annotation_parser.py         
-│   ├── utils/                            # Utility Functions
-│   │   ├── visualization.py             
-│   │   ├── metrics.py                   
-│   │   ├── config.py                    
-│   │   └── logger.py                    
-│   └── evaluation/                       # Model Evaluation
-│       ├── performance_analyzer.py      
-│       ├── cross_validation.py          
-│       └── benchmark_tests.py           
+│       └── model_comparison.py                    
 ├── trained_models/                       # Saved Model Artifacts
 │   ├── exercise_classifier.h5           
 │   ├── pushup_analyzer.h5               
@@ -137,10 +110,10 @@ I-Coach/
 │   ├── optimization_logs/               
 │   └── visualizations/                  
 ├── notebooks/                            # Jupyter Notebooks
-│   ├── data_exploration.ipynb           
-│   ├── model_development.ipynb          
-│   ├── hyperparameter_tuning.ipynb     
-│   └── results_analysis.ipynb           
+│   ├── Hammer_Curl_Classifier.ipynb           
+│   ├── Squat_Form_Classifier.ipynb          
+│   ├── chatbot.ipynb     
+│   └── pushup-form-tracker.ipynb           
 ├── requirements.txt                      # Python dependencies
 ├── config.yaml                          # Configuration file
 ├── README.md                            
