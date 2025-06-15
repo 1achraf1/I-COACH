@@ -108,7 +108,7 @@ I-Coach/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/I-Coach.git
+   git clone https://github.com/1achraf1/I-COACH.git
    cd I-Coach
    ```
 
