@@ -135,10 +135,3 @@ Tips for Best Results
 - Keep video length reasonable (under 2 minutes for faster processing)
 - Good lighting and clear background improve accuracy
 
-Next Steps
-----------
-
-- Explore the :doc:`tutorials/index` for detailed guides
-- Check out :doc:`examples/index` for common use cases  
-- Read the :doc:`user_guide/index` for advanced features
-- Review :doc:`development/index` if you want to contribute
