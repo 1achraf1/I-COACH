@@ -10,6 +10,10 @@ Exercise Classification Model
 - **Architecture**: GRU
 - **Accuracy**: 84%
 
+.. image:: confusion_matrix/classification.png
+   :alt: confusion_matrix,classification
+   :width: 600px
+   :align: center
 
 Form Checking Models
 --------------------
@@ -21,21 +25,25 @@ Form Checking Models
 
 **Squat Form Checker**
 
-- **Model**: `best_squat_attention_model.h5`
 - **Accuracy**: 67.7%
-
+.. image:: confusion_matrix/squat.png
+   :alt: confusion_matrix,squat
+   :width: 600px
+   :align: center
 
 **Hammer Curl Form Checker**
 
 - **Accuracy**: 84.6%
 
+.. image:: confusion_matrix/hammer_curl.png
+   :alt: confusion_matrix,classification
+   :width: 600px
+   :align: center
 
 AI Fitness Coach (Chatbot)
 --------------------------
 
-- **Model**: `fitness_chatbot_model.h5`
-- **Approach**: Seq2Seq with attention
+- **Architecture**: GRU-based NLP pipeline
 - **Training Data**: Custom Q&A fitness dataset
-- **Evaluation**: Human-rated coherence score: 4.5/5
+- **Accuracy**: 79%  
 
----
