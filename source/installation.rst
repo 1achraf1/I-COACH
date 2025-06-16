@@ -87,8 +87,12 @@ Download the following model files and place them in the project directory:
 Model Download Links
 ~~~~~~~~~~~~~~~~~~~~
 
-.. note::
-   Contact the development team for access to pre-trained models or train your own using the provided training scripts.
+- `best_exercise_classifier.h5 <https://github.com/1achraf1/I-COACH/blob/main/Models/best_exercise_classifier.h5>`__  
+- `best_attention_model.h5 <https://github.com/1achraf1/I-COACH/blob/main/Models/best_attention_model.h5>`__  
+- `best_pu_attention_model.h5 <https://github.com/1achraf1/I-COACH/blob/main/Models/best_pu_attention_model.h5>`__  
+- `best_squat_attention_model.h5 <https://github.com/1achraf1/I-COACH/blob/main/Models/best_squat_rnn_model.h5>`__  
+- `fitness_chatbot_model.h5 <https://github.com/1achraf1/I-COACH/blob/main/Models/chatbot/fitness_lstm_model.h5>`__  
+- `chatbot_tokenizer.pkl <https://github.com/1achraf1/I-COACH/blob/main/Models/chatbot/fitness_lstm_tokenizer.pkl>`__  
 
 Verification
 ------------
