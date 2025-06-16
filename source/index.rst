@@ -3,12 +3,11 @@ I-Coach: AI-Powered Exercise Recognition and Form Analysis
 
 Welcome to I-Coach, advanced AI-powered exercise recognition system that provides real-time exercise classification and intelligent form checking for optimal workout performance.
 
-
-
 Features
 --------
 
 🏋️ **Exercise Recognition**: Automatically detects and classifies 5 different exercises:
+
 - Bench Press
 - Hammer Curl  
 - Pull Up
@@ -16,6 +15,7 @@ Features
 - Squat
 
 🤖 **AI Form Checking**: Advanced form analysis for:
+
 - Squats (5 specific form types)
 - Hammer Curls (controlled movement analysis)
 - Push-ups (body alignment and range of motion)
@@ -41,10 +41,13 @@ Quick Start
    about/index
    installation
    quickstart
+   data/index
+   pipeline/index
    tutorials/index
    examples/index
    development/index
    user_guide/index
+   api/index
 
 Indices and tables
 ==================
