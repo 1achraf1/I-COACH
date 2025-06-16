@@ -32,12 +32,12 @@ Features
    :maxdepth: 2
    :caption: Contents:
 
+   team
    about/index
    installation
    quickstart
    data/index
-   team
-   tutorials/index
+   results
    examples/index
    
    
