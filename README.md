@@ -184,23 +184,16 @@ streamlit run app/app.py
 
 ### Form Analysis Accuracy
 - **Push-up Form**: 89% correlation with expert assessment
-- **Squat Form**: 92% accuracy in depth and angle measurements
+- **Squat Form**: 92% accuracy in analysis
 - **Hammer Curl Form**: 87% precision in range of motion analysis
 
 ### Chatbot Performance
 - **Intent Recognition**: 79% accuracy across fitness-related queries
-- **Response Relevance**: 4.0/5.0 average user rating
-
-### User Experience
-- **Progress Tracking**: Workout session analytics and improvement metrics
-- **Personalized Recommendations**: AI-driven exercise suggestions
 
 ## Future Enhancements
 
 - **Additional Exercises**: Expansion to 15+ exercise types
-- **3D Pose Estimation**: Enhanced biomechanical analysis
-- **Mobile Application**: Native iOS/Android apps
-- **Wearable Integration**: Smartwatch and fitness tracker connectivity
+- **Form Analysis**: Expansion to all the exercises
 
 ## License
 
