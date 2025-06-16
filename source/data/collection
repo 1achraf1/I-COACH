@@ -1,26 +1,12 @@
 Data Collection
 ===============
 
-The data collection process for I-Coach involves systematic recording and acquisition of exercise video data to train robust machine learning models for exercise recognition and form analysis.
+The data collection process for I-Coach involves systematic recording and acquisition of exercise video data from various sources to train robust machine learning models for exercise recognition and form analysis. We collected data from multiple platforms including YouTube, Instagram, TikTok, and public datasets to ensure comprehensive coverage and diversity.
 
-Collection Methodology
-----------------------
 
-Video Recording Setup
-~~~~~~~~~~~~~~~~~~~~~~
 
-**Camera Configuration**
-- Resolution: 1080p minimum (1920x1080)
-- Frame rate: 30 fps
-- Recording angle: Front-facing and side-view captures
-- Lighting: Consistent, well-lit environment
-- Background: Clean, uncluttered background
 
-**Recording Environment**
-- Indoor gym settings with proper lighting
-- Home workout spaces with adequate room
-- Outdoor fitness areas (when applicable)
-- Multiple camera angles for comprehensive coverage
+
 
 Exercise Categories
 ~~~~~~~~~~~~~~~~~~~
@@ -28,210 +14,58 @@ Exercise Categories
 The system collects data for five primary exercise categories:
 
 1. **Bench Press**
-   - Variations: Standard, incline, decline
-   - Weight ranges: Bodyweight to advanced loads
-   - Form variations: Proper and common error patterns
+   
 
 2. **Hammer Curl**
-   - Arm positions: Standing, seated
-   - Weight types: Dumbbells, cables, resistance bands
-   - Tempo variations: Slow, controlled, explosive
+   
 
 3. **Pull Up**
-   - Grip variations: Wide, narrow, neutral
-   - Assistance levels: Unassisted, assisted, negative
-   - Bar types: Standard, assisted machines
+
 
 4. **Push-up**
-   - Variations: Standard, wide, diamond, incline, decline
-   - Difficulty levels: Beginner to advanced
-   - Form deviations: Common mistakes and corrections
+
 
 5. **Squat**
-   - Types: Bodyweight, weighted, goblet, back squat
-   - Depth variations: Partial, parallel, deep
-   - Stance widths: Narrow, standard, wide
+   
 
 Data Sources
 ------------
 
-Participant Demographics
-~~~~~~~~~~~~~~~~~~~~~~~~
+We collected data from various sources to ensure comprehensive coverage and diversity in our training dataset:
 
-- **Age groups**: 18-65 years
-- **Fitness levels**: Beginner, intermediate, advanced
-- **Body types**: Various heights, weights, and builds
-- **Gender distribution**: Balanced male/female representation
+Social Media Platforms
+~~~~~~~~~~~~~~~~~~~~~~
 
-Recording Sessions
-~~~~~~~~~~~~~~~~~~
+**YouTube**
+- Fitness channels and workout videos  
+- Professional trainer demonstrations  
+- User-generated exercise content  
+- Educational form and technique videos  
 
-**Structured Sessions**
-- Controlled environment recordings
-- Professional trainers demonstrating proper form
-- Multiple repetitions per exercise (10-15 reps minimum)
-- Different angles and lighting conditions
+**Instagram**
+- Fitness influencer posts and stories  
+- Workout video clips and reels  
+- Exercise form demonstrations  
+- Community fitness content  
 
-**Natural Sessions**
-- Real workout footage from gym environments
-- User-submitted videos through mobile app
-- Varying quality and recording conditions
-- Authentic movement patterns and form variations
+**TikTok**
+- Short-form exercise videos  
+- Fitness challenges and trends  
+- Quick workout demonstrations  
+- User exercise attempts and corrections  
 
-Data Volume and Statistics
---------------------------
-
-Current Dataset Size
-~~~~~~~~~~~~~~~~~~~~
-
-.. list-table:: Exercise Data Statistics
-   :header-rows: 1
-   :widths: 25 20 20 20 15
-
-   * - Exercise Type
-     - Video Count
-     - Total Duration
-     - Participants
-     - Repetitions
-   * - Bench Press
-     - 2,500
-     - 125 hours
-     - 180
-     - 28,000
-   * - Hammer Curl
-     - 3,200
-     - 96 hours
-     - 220
-     - 35,600
-   * - Pull Up
-     - 1,800
-     - 72 hours
-     - 150
-     - 19,800
-   * - Push-up
-     - 4,100
-     - 164 hours
-     - 280
-     - 47,300
-   * - Squat
-     - 3,800
-     - 152 hours
-     - 260
-     - 42,200
-
-Quality Metrics
+Public Datasets
 ~~~~~~~~~~~~~~~
 
-- **Video Quality**: 95% meet minimum resolution standards
-- **Pose Visibility**: 98% have clear body landmark visibility
-- **Annotation Accuracy**: 92% inter-annotator agreement
-- **Data Completeness**: 97% of videos have complete metadata
+- Academic research datasets on human pose estimation  
+- Open-source fitness and exercise databases  
+- Sports science research repositories  
+- Motion capture datasets from exercise studies  
 
-Collection Tools and Equipment
-------------------------------
-
-Recording Hardware
-~~~~~~~~~~~~~~~~~~
-
-- **Cameras**: Sony FX3, Canon EOS R5, iPhone 13 Pro and above
-- **Tripods**: Manfrotto carbon fiber tripods for stability
-- **Lighting**: LED panel lights for consistent illumination
-- **Audio**: External microphones for instruction recording
-
-Software Tools
-~~~~~~~~~~~~~~
-
-- **Video Management**: Custom data collection app
-- **Quality Control**: Automated video validation scripts
-- **Metadata Recording**: Structured data entry forms
-- **Storage**: Cloud-based storage with automatic backup
-
-Data Collection Workflow
--------------------------
-
-Pre-Recording Phase
-~~~~~~~~~~~~~~~~~~~
-
-1. **Participant Screening**
-   - Fitness level assessment
-   - Medical clearance verification
-   - Consent form completion
-   - Equipment familiarity check
-
-2. **Setup Preparation**
-   - Camera positioning and calibration
-   - Lighting adjustment
-   - Background setup
-   - Audio equipment testing
-
-Recording Phase
+Recorded Videos
 ~~~~~~~~~~~~~~~
 
-1. **Warm-up Documentation**
-   - Basic movement patterns
-   - Range of motion assessment
-   - Initial form evaluation
-
-2. **Exercise Execution**
-   - Multiple sets with varying intensities
-   - Different angles and positions
-   - Both correct and incorrect form demonstrations
-   - Real-time feedback and corrections
-
-3. **Cool-down Recording**
-   - Recovery movements
-   - Final form assessments
-   - Participant feedback collection
-
-Post-Recording Phase
-~~~~~~~~~~~~~~~~~~~~
-
-1. **Immediate Quality Check**
-   - Video playback review
-   - Technical quality assessment
-   - Completeness verification
-   - Retake decisions
-
-2. **Data Transfer and Backup**
-   - Secure file transfer to storage
-   - Metadata entry and validation
-   - Backup verification
-   - File organization and naming
-
-Ethical Considerations
-----------------------
-
-Privacy and Consent
-~~~~~~~~~~~~~~~~~~~
-
-- **Informed Consent**: Comprehensive consent forms for all participants
-- **Data Usage Rights**: Clear agreements on data usage and sharing
-- **Anonymization**: Personal identifiers removed from public datasets
-- **Withdrawal Rights**: Participants can withdraw consent at any time
-
-Data Security
-~~~~~~~~~~~~~
-
-- **Encryption**: All data encrypted during transfer and storage
-- **Access Control**: Role-based access to sensitive data
-- **Audit Trails**: Complete logging of data access and modifications
-- **Compliance**: GDPR and relevant privacy law compliance
-
-Future Collection Plans
------------------------
-
-Expansion Areas
-~~~~~~~~~~~~~~~
-
-- **Additional Exercises**: Deadlifts, overhead press, lunges
-- **Rehabilitation Movements**: Physical therapy exercises
-- **Sport-Specific Actions**: Athletic movement patterns
-- **Accessibility Adaptations**: Modified exercises for different abilities
-
-Technology Improvements
-~~~~~~~~~~~~~~~~~~~~~~~
-
-- **Higher Resolution**: 4K video recording capabilities
-- **Multi-Modal Data**: IMU sensors and heart rate monitoring
-- **Real-Time Processing**: Edge computing for immediate feedback
-- **Mobile Integration**: Enhanced smartphone data collection apps
+- Custom exercise recordings performed by our team  
+- Controlled environment setups for consistent data labeling  
+- Videos covering different angles, lighting, and body types to enhance model robustness  
+- Focused recordings for exercises such as push-ups, squats, curls, and pull-ups
