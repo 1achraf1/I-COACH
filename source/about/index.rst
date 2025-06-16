@@ -4,7 +4,7 @@ About I-Coach
 Overview
 --------
 
-I-Coach is a state-of-the-art computer vision application that combines exercise recognition with intelligent form analysis. Built using deep learning models and MediaPipe pose estimation, it provides real-time feedback to help users improve their workout form and technique.
+I-Coach is a  computer vision application that combines exercise recognition with intelligent form analysis. Built using deep learning models and MediaPipe pose estimation, it provides real-time feedback to help users improve their workout form and technique.
 
 Key Technologies
 ----------------
@@ -35,6 +35,11 @@ I-Coach uses a multi-model architecture:
 3. **Chatbot Model**: NLP model for fitness guidance and Q&A
 
 The system processes video frames in real-time, extracts pose landmarks using MediaPipe, and feeds them through the appropriate AI models to provide instant feedback.
+
+.. image:: images/pipeline.png
+   :alt: I-COACH Screenshot
+   :width: 600px
+   :align: center
 
 Use Cases
 ---------
