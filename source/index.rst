@@ -26,13 +26,7 @@ Features
 
 🤖 **AI Fitness Coach**: Interactive chatbot for fitness guidance and tips
 
-Quick Start
------------
 
-.. code-block:: bash
-
-   pip install -r requirements.txt
-   streamlit run app.py
 
 .. toctree::
    :maxdepth: 2
