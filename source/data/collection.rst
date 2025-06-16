@@ -1,7 +1,7 @@
 Data Collection
 ===============
 
-The data collection process for I-Coach involves systematic recording and acquisition of exercise video data from various sources to train robust machine learning models for exercise recognition and form analysis. We collected data from multiple platforms including YouTube, Instagram, TikTok, and public datasets to ensure comprehensive coverage and diversity.
+The data collection process for I-Coach involves recording and acquisition of exercise video data from various sources to train robust deep learning models for exercise recognition and form analysis. We collected data from multiple platforms including YouTube, Instagram, TikTok, and public datasets to ensure comprehensive coverage and diversity.
 
 
 Exercise Categories
