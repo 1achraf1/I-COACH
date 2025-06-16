@@ -32,14 +32,24 @@ I-Coach uses a multi-model architecture:
 
 1. **Exercise Classification Model**: LSTM-based model trained on pose landmarks
 2. **Form Checking Models**: Specialized attention-based models for each exercise
-3. **Chatbot Model**: NLP model for fitness guidance and Q&A
-
-The system processes video frames in real-time, extracts pose landmarks using MediaPipe, and feeds them through the appropriate AI models to provide instant feedback.
 
 .. image:: images/pipeline.png
-   :alt: I-COACH Screenshot
+   :alt: computer vision pipeline
    :width: 600px
    :align: center
+The system processes video frames in real-time, extracts pose landmarks using MediaPipe, and feeds them through the appropriate AI models to provide instant feedback.
+
+3. **Chatbot Model**: NLP model for fitness guidance and Q&A
+
+
+.. image:: images/nlp_pipeline.png
+   :alt: computer vision pipeline
+   :width: 600px
+   :align: center
+
+
+
+
 
 Use Cases
 ---------
