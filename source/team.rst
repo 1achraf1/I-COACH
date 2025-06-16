@@ -19,5 +19,5 @@ Team Members
 Field of Study
 --------------
 
-- **AIDT ** Ensam Meknes
+- **AIDT** Ensam Meknes
 
