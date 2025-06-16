@@ -36,6 +36,7 @@ Features
    installation
    quickstart
    data/index
+   team
    tutorials/index
    examples/index
    
