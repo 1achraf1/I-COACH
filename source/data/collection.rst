@@ -7,7 +7,7 @@ The data collection process for I-Coach involves systematic recording and acquis
 Exercise Categories
 ~~~~~~~~~~~~~~~~~~~
 
-The system collects data for five primary exercise categories:
+We collect data for five primary exercise categories:
 
 1. **Bench Press**
    
@@ -53,7 +53,7 @@ Social Media Platforms
 Public Datasets
 ~~~~~~~~~~~~~~~
 
-- Academic research datasets on human pose estimation  
+- Academic research datasets  
 - Open-source fitness and exercise databases  
 - Sports science research repositories  
 - Motion capture datasets from exercise studies  
@@ -63,5 +63,4 @@ Recorded Videos
 
 - Custom exercise recordings performed by our team  
 - Controlled environment setups for consistent data labeling  
-- Videos covering different angles, lighting, and body types to enhance model robustness  
-- Focused recordings for exercises such as push-ups, squats, curls, and pull-ups
+- Videos covering different angles to enhance model robustness  
