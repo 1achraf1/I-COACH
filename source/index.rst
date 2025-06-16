@@ -42,12 +42,11 @@ Quick Start
    installation
    quickstart
    data/index
-   pipeline/index
    tutorials/index
    examples/index
-   development/index
-   user_guide/index
-   api/index
+   
+   
+   
 
 Indices and tables
 ==================
