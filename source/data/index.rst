@@ -22,8 +22,4 @@ Key Components
    :caption: Data Topics:
 
    collection
-   preprocessing
-   annotation
-   quality_control
-   dataset_structure
-   augmentation
+
